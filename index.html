@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metricon Brand Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="quiz-container">
+  <h1>Metricon Brand Quiz</h1>
+  <div id="nickname-screen">
+    <input type="text" id="nickname" placeholder="Enter your nickname" />
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <div id="difficulty-screen" class="hidden">
+    <h2>Select Difficulty</h2>
+    <button class="difficulty" data-level="easy">Easy</button>
+    <button class="difficulty" data-level="hard">Hard</button>
+    <button class="difficulty" data-level="challenging">Challenging</button>
+  </div>
+
+  <div id="quiz-screen" class="hidden">
+    <div id="question-container">
+      <div id="question"></div>
+      <div id="options"></div>
+    </div>
+    <div id="progress"></div>
+  </div>
+
+  <div id="result-screen" class="hidden">
+    <h2>Quiz Complete!</h2>
+    <p id="final-score"></p>
+    <h3>Leaderboard</h3>
+    <ul id="leaderboard"></ul>
+    <button id="restart-btn">Play Again</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
